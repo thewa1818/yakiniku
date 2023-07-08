@@ -147,7 +147,8 @@
 
 /* トップイメージ */
 .top {
-  width: 80%;
+  position: relative;
+  width: 100%;
 }
 
 .top_video video {
@@ -201,16 +202,21 @@
 
 .top_center {
   position: absolute;
-  top: 30px;
-  right: 38%;
-  margin: auto;
-  width: 150px;
-  height: auto;
+  top: 100px;
+  left: 40%;
+  writing-mode: vertical-rl;
+  height: 800px;
+  color: white;
+  text-align: start;
+  font-size: 100px;
+  font-family: serif;
+  font-weight: bold;
+  text-shadow: 1px 1px 6px black;
 }
 
-.top_center img {
-  width: 100%;
-  height: auto;
+.redText{
+  color: red;
+  font-size: 140px;
 }
 
 
@@ -278,7 +284,7 @@
   width: 100%;
   top: 1200px;
   height: 200px;
-  padding-left: 300px;
+  padding-left: 280px;
   background-color: #fff;
 }
 
@@ -436,7 +442,7 @@
 .other_contents{
   position: relative;
   top: 900px;
-  margin-left:10px;
+  margin-left:45px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -493,4 +499,48 @@
 .other_course:hover{
   background-color:#ffffff00;
   background-blend-mode:lighten;
+}
+
+.about{
+  position: relative;
+  top: 950px;
+  width: 100%;
+}
+
+.about_video video{
+  object-fit: cover;
+  width: 100%;
+  height: 1000px;
+}
+
+.about_title{
+  position: absolute;
+  top: 5%;
+  right: 60%;
+  writing-mode: vertical-rl;
+  font-size: 80px;
+  font-weight: bold;
+  color: white;
+  line-height: 120px;
+  font-family: serif;
+}
+
+.about_sub{
+  position: absolute;
+  top: 53%;
+  font-size: 30px;
+  font-family: serif;
+  right: 60px;
+ padding: 30px;
+ width: 500px;
+ line-height: 30px;
+  background-color: #f9f9f991;
+  color: black;
+  text-align: center;
+}
+
+.about_text{
+  font-size: 16px;
+  text-align: start;
+  padding-top: 20px;
 }
