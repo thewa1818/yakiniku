@@ -2,12 +2,13 @@
   box-sizing: border-box;
 }
 
+/* ヘッダー */
 .header {
   position: fixed;
   background-color:rgb(221, 0, 0);
   height: 1000px;
   width: 20%;
-  z-index: 5;
+  z-index: 50;
 }
 
 .header_wrap{
@@ -103,9 +104,48 @@
   transform: translate(5px, -50%) rotate(-30deg);
 }
 
+.header_tel{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  padding: 10px;
+  font-family: monospace;
+ line-height: 30px;
+}
+
+.header_tel img {
+  width: 40px;
+  height: 40px;
+}
+
+.header_time{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  padding: 10px;
+  font-family: monospace;
+ /* line-height: 30px; */
+}
+
+.header_time img {
+  width: 40px;
+  height: 40px;
+}
 
 
 
+
+
+
+/* トップイメージ */
 .top {
   width: 80%;
 }
@@ -117,9 +157,11 @@
   width: 80%;
   margin: 0 0 0 auto;
   object-fit: cover;
-  height: 800px;
+  height: 815px;
 }
 
+
+/* 予約ボタン */
 .top_btn{
  background-color: rgb(221, 0, 0);
  position: fixed;
@@ -137,7 +179,7 @@
 .top_btn:hover {
   box-shadow: 0 0 #333;
   color: #fff;
-  background-color: #333;
+  background-color: #d69d01;
 }
 
 .top_btn-text{
@@ -172,6 +214,10 @@
 }
 
 
+/* ランチコーナー */
+.menu_wrap{
+  width: 100%;
+}
 
 .main_lunch {
   position: relative;
@@ -179,15 +225,15 @@
   z-index: 5;
   /* left: 200px; */
   background: url(../img/lunch.jpg)no-repeat center/cover;
-  height: 300px;
+  height: 330px;
   width: 80%;
   /* margin-left: 250px;; */
   margin: 0 0 0 auto;
+
 }
 
 .lunch_title {
   color:black;
-  padding-top: 5px;
   padding-left: 30px;
   font-family: serif;
   font-size: 80px;
@@ -229,9 +275,11 @@
 
 .lunch_wrap {
   position: absolute;
+  width: 100%;
   top: 1200px;
   height: 200px;
-  padding-left: 370px;
+  padding-left: 300px;
+  background-color: #fff;
 }
 
 
@@ -239,16 +287,29 @@
   width: 100%;
   height: 200px;
   object-fit: cover;
+
 }
+
+.lunch_img:hover{
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  opacity: .9;
+  transform:scale(1.2,1.2);
+  transition:0.5s all;
+}
+
 .lunch_menu-img{
   width: 300px;
   height: 200px;
+  overflow: hidden;
 }
 
 .lunch_menu{
  border: 4px solid #000;
  box-shadow: 3px 3px 3px gray;
- margin: 10px; 
+ margin: 15px; 
+ cursor: pointer;
 }
 
 .lunch_menu-title{
@@ -293,4 +354,143 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+}
+
+.lunch_hide{
+  display: none;
+}
+
+.more_btn{
+  text-align: center;
+  padding: 30px;
+  background-color:black;
+  width: 200px;
+  margin: auto;
+  color: white;
+  font-size: 20px;
+  font-family: serif;
+  cursor: pointer;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+
+/* メニュー */
+
+.other_wrap{
+  position: relative;
+  width: 100%;
+  margin:auto;
+}
+
+.other_menu{
+  position: absolute;
+  top: 10px;
+  width: 100%;
+  height: 700px;
+  background: url(../img/niku1.jpg) no-repeat center /cover;
+  overflow: hidden;
+}
+
+.sinagaki{
+  font-size: 40px;
+  text-align: center;
+  color: white;
+  writing-mode: vertical-lr;
+  background-color: black;
+  padding: 20px;
+  height: 270px;
+  margin: 200px auto;
+  text-align: center;
+  font-family: serif;
+}
+
+
+.kurukuru{
+  position: absolute;
+  top: 0;
+  margin: auto;
+  /* right: 0; */
+  width: 100%;
+  height: auto;
+  opacity: .5;
+  animation:30s linear infinite rotation1;
+}
+
+@keyframes rotation1{
+  0%{ transform:rotate(0);}
+  100%{ transform:rotate(360deg); }
+}
+
+
+.katamari{
+  position: absolute;
+  z-index: 7;
+  top: 400px;
+  left: 100px;
+  margin: auto;
+  width: 80%;
+  height: auto;
+}
+
+.other_contents{
+  position: relative;
+  top: 900px;
+  margin-left:10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.other_course{
+  text-align: center;
+  line-height: 300px;
+  width: 500px;
+  height: 300px;
+  background: url(../img/other1.jpg) no-repeat center / cover ;
+  background-color:rgba(212, 161, 161, 0.405);
+  background-blend-mode:lighten;
+  transition:0.3s all;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.other_course-text{
+  font-size: 100px;
+  color: black;
+  font-weight: bold;
+  font-family: serif;
+  text-shadow: 3px 3px 7px white;
+  transition:0.3s all;
+}
+
+.other_menu_item{
+  padding: 20px;
+}
+
+.enkai{
+  background: url(../img/enkai.jpg) no-repeat center / cover;
+  background-color:rgba(212, 161, 161, 0.405);
+  background-blend-mode:lighten;
+}
+
+.ippin{
+  background: url(../img/ippin.jpg) no-repeat center / cover;
+  background-color:rgba(212, 161, 161, 0.405);
+  background-blend-mode:lighten;
+}
+
+.drink{
+  background: url(../img/drink.jpg) no-repeat center / cover;
+  background-color:rgba(212, 161, 161, 0.405);
+  background-blend-mode:lighten;
+}
+
+.other_course-text:hover{
+  color: white;
+  text-shadow: 5px 3px 2px black;
+}
+
+.other_course:hover{
+  background-color:#ffffff00;
+  background-blend-mode:lighten;
 }
