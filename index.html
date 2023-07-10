@@ -7,6 +7,7 @@
   <title>Document</title>
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
+  
 </head>
 
 
@@ -15,15 +16,22 @@
   <div class="header">
     <div class="header_wrap">
       <div class="header_logo"><img src="img/logo.png" alt=""></div>
+      <div class="md_header_yoyaku"><img src="img/カレンダーアイコン8.png" alt="">ご予約</div>
+      <div class="md_header_menuBtn"><img src="img/hum.png" alt="">メニュー</div>
+
+      <!-- レスポンシブ -->
+      <div class="md_header_logo">樹苑</div>
+      
+      
       <div class="header_title"><span class="text1">二代目</span>樹苑</div>
     <p class="header_title-text">yakiniku</p>
     <div class="header_menu">
       <ul class="header_list">
-        <li class="header_list-item">お得なランチ</li>
-        <li class="header_list-item">お品書き</li>
-        <li class="header_list-item">樹苑について</li>
-        <li class="header_list-item">店舗情報</li>
-        <li class="header_list-item">お問い合わせ</li>
+        <li class="header_list-item"><a href="#jump1">お得なランチ></a></li>
+        <li class="header_list-item"><a href="#jump2">お品書き</a></li>
+        <li class="header_list-item"><a href="#jump3">樹苑について</a></li>
+        <li class="header_list-item"><a href="#jump4">店舗情報</a></li>
+        <li class="header_list-item"><a href="#jump5">お問い合わせ</a></li>
       </ul>
       <div class="header_tel"><img src="img/tel.png">0745-54-1129</div>
       <div class="header_time"><img src="img/time.png">11:00~15:00
@@ -33,6 +41,7 @@
     </div>
   </div>
 
+  
 
 
   <div class="top">
@@ -42,23 +51,26 @@
     <div class="top_btn">
       <div class="top_btn-text">ご予約はこちら<img class="days_img" src="img/カレンダーアイコン8.png" alt=""></div></div>
       <div class="top_center">焼肉が<br>大好き店主が<br>営む<br><span class="redText">焼肉店</span></div>
+
+      <div class="md_top_center">焼肉が大好き店主が<br>営む<span class="redText">焼肉店</span></div>
+
   </div>
 
 
 
-
-  <div class="menu_wrap">
-
+  <a name="menu">
+  <div class="menu_wrap ">
+  
     <div class="main_lunch">
-      <span class="lunch_title_min">大人気!!</span>
+      <span  id="jump1" class="lunch_title_min ">大人気!!</span>
       <img class="flag_img" src="img/footerimg.png" alt="">
-      <h1 class="lunch_title"><span class="wagyu">黒毛和牛</span>をランチでお得に</h1>
-      <p class="lunch_text">全定食おかわり自由<br>コーヒー無料サービス</p>
+      <h1 class="lunch_title glowAnime">黒毛和牛をランチでお得に</h1>
+      <p class="lunch_text fadeUpTrigger">全定食おかわり自由<br>コーヒー無料サービス</p>
     </div>
   
     <div class="lunch_wrap">
 
-      <div class="lunch_flex">
+      <div class="lunch_flex delayScroll">
 
         <div class="lunch_menu">
           <div class="lunch_menu-img"><img class="lunch_img" src="img/harami_lunch.jpg" alt=""></div>
@@ -149,12 +161,13 @@
       </div>
 
       <div class="more_btn">もっと見る</div>
+    </a>
 
 
 <!-- メニュー -->
-<div class="other_wrap">
-  <div class="other_menu">
-    <p class="sinagaki">お品書き</p>
+<div  class="other_wrap">
+  <div id="jump2" class="other_menu">
+    <p class="sinagaki fadeUpTrigger">お品書き</p>
     <img class="kurukuru" src="img/kurukuru.png" alt="">
   </div>
 
@@ -162,7 +175,7 @@
   <img class="katamari" src="img/katamari.png" alt=""></div>
 
 
-<div class="other_contents">
+<div class="other_contents delayScroll ">
 
   <div class="other_menu_item">
     <h2 class="other_course">
@@ -185,23 +198,23 @@
   </div>
 </div>
 
-<div class="about">
+<div id="jump3" class="about">
   <div class="about_video"><video src="video/video3.mp4" autoplay="" loop="" muted=""></video></div>
   <h1 class="about_title">ただただ、
     <br>ただただありがとう</h1>
     <h2 class="about_sub">樹苑の想い
-      <p class="about_text">「樹苑も美味しいよね」。そう言って頂けるよう日々奮闘中！肉好きな店主が本気でおもてなし致します♪ 当店「和牛焼肉専門店 樹苑」は大衆的な雰囲気の中でも、上質な肉をお客さまにご提供 したいという思いで、いい肉を安くご提供させていただいております。 肉が大好きな店主が営み、様々な肉を食べつくしてきた、肉好きだからこそできるこだわりの部位やレアな部位を取り扱っております。特に、特上塩タンは他店にはない厚切りで、噛めば噛むほど味が染み出してきて、肉本来の旨みを味わうことができる間違いの無い美味さで必ず満足いただけるはずです。 皆様のご来店心よりお待ちしております。</p>
+      <p class="about_text blurTrigger">「樹苑も美味しいよね」。そう言って頂けるよう日々奮闘中！肉好きな店主が本気でおもてなし致します♪ 当店「和牛焼肉専門店 樹苑」は大衆的な雰囲気の中でも、上質な肉をお客さまにご提供 したいという思いで、いい肉を安くご提供させていただいております。 肉が大好きな店主が営み、様々な肉を食べつくしてきた、肉好きだからこそできるこだわりの部位やレアな部位を取り扱っております。特に、特上塩タンは他店にはない厚切りで、噛めば噛むほど味が染み出してきて、肉本来の旨みを味わうことができる間違いの無い美味さで必ず満足いただけるはずです。 皆様のご来店心よりお待ちしております。</p>
     </h2>
     
 </div>
 
-<div class="address">
-  <div class="address_wrap">
+<div id="jump4" class="address">
+  <div class="address_wrap fadeUpTrigger">
     <div class="address_title">店舗情報</div>
   </div>
   <div class="add_container">
-    <div class="add_map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3286.460462135819!2d135.74846797581097!3d34.54189509171713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60012df866d8d54f%3A0x7d03e7562d399d06!2z5ZKM54mb54S86IKJ5bCC6ZaA5bqXIOaoueiLkQ!5e0!3m2!1sja!2sjp!4v1688870203539!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
-    <div class="add_container_flex">
+    <div class="add_map fadeUpTrigger"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3286.460462135819!2d135.74846797581097!3d34.54189509171713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60012df866d8d54f%3A0x7d03e7562d399d06!2z5ZKM54mb54S86IKJ5bCC6ZaA5bqXIOaoueiLkQ!5e0!3m2!1sja!2sjp!4v1688870203539!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+    <div class="add_container_flex fadeUpTrigger">
       <h1 class="add_container_title">和牛焼肉専門店 樹苑</h1>
     <div class="add_container_text">
       <ul class="add_container_list">
@@ -216,9 +229,9 @@
   </div>
 </div>
 
-<div class="contact">
+<div id="jump5" class="contact">
   <div class="contact_img"></div>
-  <div class="contact_form">
+  <div class="contact_form fadeUpTrigger">
     <h1 class="contact_form-title">予約する</h1>
     <table>
       <tr>
@@ -284,15 +297,12 @@
 
 
 </div>
-
-
-
-
-
-<!-- 重要 -->
 </div>
    <!-- jqueryが必ず先！ -->
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+   <script src="http://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/move02/8-17/js/8-17.js"></script>
+   <script src="http://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/move02/4-12/js/4-12.js"></script>
+
    <!--  -->
    <script src="js/app.js"></script>
   
